@@ -1,0 +1,472 @@
+!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="gengar.css">
+    <style>
+        
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&family=Pixelify+Sans:wght@400..700&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    box-sizing: border-box;
+    background-color: blueviolet;
+    z-index: -2;
+    min-width: 100vh;
+    min-height: 100vh;
+}
+
+.pokedex{
+    width: 1000px;
+    height: 630px;
+    background-color:rgb(224,176,150,255);
+    position: relative;
+left: 170px;  
+top: 20px;  
+    
+}
+
+.botao__voltar:hover{
+    transform:scale(0.9);
+}
+
+.caixa__topo{
+    z-index: -1;
+    width: 650px;
+    height: 70px;
+    border-radius:  0px 10px 10px 0px;
+border-left: 1px solid transparent;
+    border-top: 1px solid transparent;
+    border-bottom:4px solid black;
+    border-right: 4px solid black ;
+    background-color: rgb(225,217,155,255);
+}
+
+
+.texto__topo{
+    position: relative;
+    left: 10px;
+    top: 15px;
+    font-family:'Pixelify Sans', sans-serif;
+    color: rgb(17, 17, 17);
+
+}
+
+
+.info__pokemon{
+    width: 370px;
+    height: 370px;
+    border: 1px solid transparent;
+    position: relative;
+    top: 10px;
+    background-color: rgb(197, 169,230, 255);
+}
+
+.status__pokemon{
+    width: 598px;
+    height: 390px;
+    border: 1px solid transparent;
+    position: relative;
+    bottom: 365px;
+    left: 400px;
+    background-color: rgb(224,176,150,255);
+}
+
+.texto__pokemon{
+    width: 998px;
+    height: 135px;
+    border: 1px solid transparent;
+    position: relative;
+    bottom: 866px;
+    background-color: rgb(225,217,155,255);
+    
+    
+}
+
+.dragonite{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 250px;
+    position: relative;
+    left: 55px;
+    top: 50px;
+}
+
+.texto__mew{
+    font-family:'Pixelify Sans', sans-serif;
+    font-size: 30px;
+}
+
+.nome__pokemon{
+    position: relative;
+    bottom: 250px;
+    left: 115px;
+    font-family:'Pixelify Sans', sans-serif;
+}
+
+.botao__voltar{
+    width: 310px;
+    height: 70px;
+    border-left: 4px solid black;
+    border-top: 4px solid black;
+    border-bottom:4px solid black;
+    border-right: 4px solid black ;
+    border-radius:  10px 8px 10px 10px;
+    position: relative;
+    bottom: 1538px;
+    left: 678px;
+    background-color: rgb(5, 119, 196, 255);
+    
+}  
+
+.botao__voltar:hover{
+    transform: scale(0.9);
+}
+
+.texto__voltar{
+    text-align: center;
+    position: relative;
+    top: 15px;
+    font-family:'Pixelify Sans', sans-serif;
+}
+
+.caixa__info{
+    width: 570px;
+    height: 70px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+    position: relative;
+    bottom: 750px;
+    left: 410px;
+    z-index: 1;
+    background-color: rgb(225,217,155,255);
+
+}
+
+.informacao{
+    text-align: center;
+    position: relative;
+    top: 15px;
+    font-family:'Pixelify Sans', sans-serif;
+}
+
+.caixa__info2{
+    background-color: white;
+    width: 270px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius:8px 8px 0px 0px;
+    position: relative;
+    bottom: 770px;
+    left: 410px;
+    z-index: 1;
+    
+
+}
+
+.caixa__info3{
+    background-color: white;
+    width: 270px;
+    height: 50px;
+    border: 2px solid;
+    border-radius:8px 8px 0px 0px;
+    position: relative;
+    bottom: 700px;
+    left: 410px;
+    z-index: 1;
+    
+}
+
+.caixa__info4{
+    background-color: white;
+    width: 270px;
+    height: 50px;
+    border: 2px solid;
+    border-radius:8px 8px 0px 0px;
+    position: relative;
+    bottom: 980px;
+    left: 710px;
+    z-index: 1;
+    
+}
+
+.caixa__info5{
+    background-color: white;
+    width: 270px;
+    height: 50px;
+    border: 2px solid;
+    border-radius:8px 8px 0px 0px;
+    position: relative;
+    bottom: 910px;
+    left: 710px;
+    z-index: 1;
+   
+}
+
+
+.baixo__caixa2{
+    width: 272px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 0px 0px 8px 8px;
+    z-index: 1;
+    position: relative;
+    bottom: 664px;
+    left: 410px;
+}
+
+.baixo__caixa3{
+    width: 272px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 0px 0px 8px 8px;
+    z-index: 1;
+    position: relative;
+    bottom: 594px;
+    left: 410px;
+}
+
+.baixo__caixa4{
+    width: 272px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 0px 0px 8px 8px;
+    z-index: 1;
+    position: relative;
+    bottom: 874px;
+    left: 710px;
+}
+
+.baixo__caixa5{
+    width: 272px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 0px 0px 8px 8px;
+    z-index: 1;
+    position: relative;
+    bottom: 804px;
+    left: 710px;
+}
+
+.status2{
+    text-align: center;
+    font-family:'Pixelify Sans', sans-serif;
+    position: relative;
+    top: 6px;
+}
+
+.status3{
+    text-align: center;
+    font-family:'Pixelify Sans', sans-serif;
+    position: relative;
+    top: 6px;
+}
+
+.status4{
+    text-align: center;
+    font-family:'Pixelify Sans', sans-serif;
+    position: relative;
+    top: 6px;
+}
+
+.status5{
+    text-align: center;
+    font-family:'Pixelify Sans', sans-serif;
+    position: relative;
+    top: 6px;
+}
+
+.texto__um{
+position: relative;
+left: 128px;
+top: 180px;
+font-family:'Pixelify Sans', sans-serif;
+font-size: 20px;
+width: 50px;
+}
+
+.texto__tres{
+    position: relative;
+    top: 153px;
+    left: 358px;
+    font-family:'Pixelify Sans', sans-serif;
+    font-size: 20px;
+    width: 200px;
+}
+
+
+
+.texto__quatro{
+    width: 150px;
+    position: relative;
+top: 15px;
+    left: 95px;
+    font-family:'Pixelify Sans', sans-serif;
+    font-size: 20px;
+}
+
+.tipo{
+    width: 90px;
+    height: 30px;
+    background-color:purple;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    position: relative;
+    bottom: 903px;
+    left: 450px;
+    z-index: 1;
+}
+
+.texto__tipo__pokemon{
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 8px;
+}
+
+    .tipo2{
+        width: 90px;
+        height: 30px;
+        background-color:rgb(168, 64, 142);
+        border: 1px solid transparent;
+        border-radius: 10px;
+        position: relative;
+        bottom: 935px;
+        left: 560px;
+        z-index: 1;
+    }
+    
+    .texto__tipo2__pokemon{
+        color: white;
+        text-align: center;
+        position: relative;
+        top: 8px;
+    }
+    </style>
+    
+        
+</head>
+<body>
+
+    <main class="pokedex">
+        <div class="caixa__topo">
+<h1 class="texto__topo">
+    POKÉDEX KANTO
+</h1>
+
+        </div>
+
+        <div class="info__pokemon">
+<img class="dragonite" src="img/gengar.jpg" alt="">
+
+<h1 class="nome__pokemon">
+    GENGAR
+</h1>
+        </div>
+
+
+        
+
+        <div class="status__pokemon">
+<p class="texto__um"> 
+    94
+</p>
+
+
+
+<p class="texto__tres">
+ CORPO AMALDIÇOADO
+</p>
+
+    </div>
+
+<div class="caixa__info">
+<h1 class="informacao">
+    INFORMAÇÕES
+</h1>
+</div>
+
+<div class="baixo__caixa2"> </div>
+
+    <div class="caixa__info2">
+        <h1 class="status2">
+            N°
+        </h1>
+    </div>
+
+</div>
+
+<div class="baixo__caixa3"></div>
+
+<div class="caixa__info3">
+    <h1 class="status3">
+        TIPO
+    </h1>
+</div>
+
+
+<div class="baixo__caixa4"></div>
+
+<div class="caixa__info4">
+    
+    <h1 class="status4">
+        HABILIDADE
+    </h1>
+   
+</div>
+
+
+<div class="baixo__caixa5"> 
+    <p class="texto__quatro">
+    SOMBRA
+        
+    </p>
+        
+</div>
+
+<div class="caixa__info5">
+
+<h1 class="status5">
+    ESPÉCIE
+</h1>
+
+ 
+</div>
+
+
+<div class="tipo">
+<p class="texto__tipo__pokemon">
+    FANTASMA
+</p>
+</div>
+ 
+<div class="tipo2">
+    <p class="texto__tipo2__pokemon">
+        VENENO
+    </p>
+    </div>
+
+
+
+<div class="texto__pokemon">
+<p class="texto__mew">
+    Sob a lua cheia, este POKéMON gosta de imitar as sombras das pessoas e rir do seu susto.
+
+</p>
+</div>
+
+<div class="botao__voltar">
+<h1 class="texto__voltar">
+    VOLTAR
+</h1>
+</div>
+
+    </main>
+   
+</body>
+</html>
